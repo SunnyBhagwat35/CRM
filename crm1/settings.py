@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'crm1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'DEMO_TEST',
+        'USER': 'postgres',
+        'PASSWORD': 'admin',
+        'HOST': 'LOCALHOST',
+        'PORT': '5432'
     }
 }
 
@@ -133,8 +137,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/img')
 #SMTP Configuration
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = ''
-EMAIL_PORT = ''
-EMAIL_USE_TLS = ''
-EMAIL_HOST_USER = 'sunnybhagwat35@gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'sunnybhagwat2000@gmail.com'
 EMAIL_HOST_PASSWORD = 'Sunny@3445'
