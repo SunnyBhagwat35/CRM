@@ -27,6 +27,12 @@ pip install -r requirements.txt
 > [!NOTE]
 > We are using sqlite3 as a database too keep it simple, you can always change it by changing the **DATABASES** variable in the [./crm1/settings.py](./crm1/settings.py). Refer this link [django databses connections](https://docs.djangoproject.com/en/5.0/ref/databases/#databases)
 
+We will migrate all the changes to database by doing.
+```
+./manage.py migrate
+```
+
+
 Now you are ready to run the project
 
 You can start the server with:
